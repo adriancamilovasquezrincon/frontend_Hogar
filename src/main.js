@@ -7,7 +7,8 @@ import axios from 'axios'
 import Vuetify from 'vuetify/lib'
 Vue.use(Vuetify)
 
-axios.defaults.baseURL='http://localhost:5000/api/'
+axios.defaults.baseURL='https://hogar-123.herokuapp.com/api/'
+// axios.defaults.baseURL='http://localhost:5000/api/'
 Vue.config.productionTip = false
 
 new Vue({
