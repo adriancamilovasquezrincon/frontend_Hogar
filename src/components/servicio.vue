@@ -142,6 +142,9 @@ export default {
     height: 30px;
     position: absolute;
   }
+  .er{
+text-decoration: none;
+  }
   .servicios {
     text-align: center;
     margin-top: 80px;
