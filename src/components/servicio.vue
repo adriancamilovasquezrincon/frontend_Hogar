@@ -154,8 +154,8 @@ export default {
   }
   .fondo {
     position: absolute;
-    width: 424px;
-    height: 840px;
+    width: 425px;
+    height: 1000px;
     background-image: url("../assets/Celular/servicios/Fondo.png");
   }
   /**Marcos arreglados */
@@ -243,9 +243,8 @@ export default {
     position: absolute;
     width: 200px;
     height: 50px;
-    left: 216px;
+    left: 212px;
     top: 5px;
-    padding-left: 5px;
     background: #266439;
     border-radius: 25px;
   }
