@@ -144,7 +144,7 @@ export default {
   font-family: "Fredoka One", cursive;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
   .servicios {
     text-align: center;
     margin-top: 86px;
@@ -154,7 +154,7 @@ export default {
   }
   .fondo {
     position: absolute;
-    width: 420px;
+    width: 375px;
     height: 1480px;
     background-image: url("../assets/Celular/servicios/Fondo.png");
   }
@@ -241,9 +241,9 @@ export default {
   }
   .iniciosesionServicio {
     position: absolute;
-    width: 200px;
+    width: 180px;
     height: 50px;
-    left: 198px;
+    left: 170px;
     top: 5px;
     background: #266439;
     border-radius: 25px;
