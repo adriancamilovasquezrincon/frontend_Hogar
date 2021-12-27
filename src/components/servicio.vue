@@ -146,16 +146,16 @@ export default {
 }
 @media screen and (max-width: 425px) {
   .servicios {
-    text-align: center;
+    margin-right: 35px;
     margin-top: 86px;
-    font-size: 46px;
+    font-size: 40px;
     color: rgba(0, 0, 0, 0.61);
     font-family: "Fredoka One", cursive;
   }
   .fondo {
     position: fixed;
     width: 425px;
-    height: 890px;
+    height: 2000px;
     background-image: url("../assets/Celular/servicios/fondito.png");
   }
   /**Marcos arreglados */
@@ -241,9 +241,9 @@ export default {
   }
   .iniciosesionServicio {
     position: absolute;
-    width: 180px;
+    width: 190px;
     height: 50px;
-    left: 220px;
+    left: 210px;
     top: 5px;
     background: #266439;
     border-radius: 25px;
