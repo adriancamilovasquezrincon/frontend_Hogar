@@ -23,18 +23,26 @@
     </div>
 
     <div class="marco1">
-      <img src="../assets/imagenesHogar/marco.png" alt="" />
+      <img class="marco1a" src="../assets/imagenesHogar/marco.png" alt="" />
       <div class="cuadroSer">
-        <img class="cuadradoCambiar"  src="../assets/imagenesHogar/cuadrado.png" alt="" />
+        <img
+          class="cuadradoCambiar"
+          src="../assets/imagenesHogar/cuadrado.png"
+          alt=""
+        />
         <router-link to="/servicioAtencion">
           <h3 id="atencion">Servicio Atención</h3></router-link
         >
       </div>
     </div>
     <div class="marco2">
-      <img src="../assets/imagenesHogar/marcos.png" alt="" />
+      <img class="marco2a" src="../assets/imagenesHogar/marcos.png" alt="" />
       <div class="cuadroSer2">
-        <img src="../assets/imagenesHogar/cuadrado.png" alt="" />
+        <img
+          class="cuadradoCambiar2"
+          src="../assets/imagenesHogar/cuadrado.png"
+          alt=""
+        />
         <router-link to="/servicioFormacion">
           <h3 id="formacion">Servicio formación</h3></router-link
         >
@@ -136,67 +144,80 @@ export default {
   font-family: "Fredoka One", cursive;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 320px) {
-  .cuadroCambiar{
-    width: 20px;
-    height: 30px;
-    position: absolute;
-  }
-  .er{
-text-decoration: none;
-  }
+@media screen and (max-width: 425px) {
   .servicios {
     text-align: center;
-    margin-top: 80px;
-    font-size: 40px;
+    margin-top: 86px;
+    font-size: 50px;
     color: rgba(0, 0, 0, 0.61);
     font-family: "Fredoka One", cursive;
   }
   .fondo {
-    position: fixed;
-    width: 322px;
-    height: 700px;
-    background-image: url("../assets/imagenesHogar/Fondo_solo_ 3.png");
+    position: absolute;
+    width: 424px;
+    height: 840px;
+    background-image: url("../assets/Celular/servicios/Fondo.png");
   }
+  /**Marcos arreglados */
   .marco1 {
     position: absolute;
-    width: 40px;
-    left: 5px;
-    top: 145px;
+    left: 100px;
+    top: 175px;
   }
   .marco2 {
     position: absolute;
-    width: 40px;
-    left: 5px;
-    top: 245px;
+    left: 100px;
+    top: 175px;
   }
+  .marco1a {
+    position: absolute;
+    width: 240px;
+    height: 265.06px;
+    top: 5px;
+  }
+  .marco2a {
+    position: absolute;
+    width: 240px;
+    height: 265.06px;
+    top: 278px;
+  }
+  /**Cuadros */
   .cuadroSer {
     position: absolute;
-    width: 40px;
-    left: 15px;
-    top: 242px;
+    top: 164px;
+    left: 26.3px;
   }
+  .cuadradoCambiar {
+    position: absolute;
+    width: 187px;
+    height: 87px;
+  }
+
   .cuadroSer2 {
     position: absolute;
-    left: 35px;
-    top: 242px;
-    margin-left: 1px;
+    left: 25.4px;
+    top: 435px;
+  }
+  .cuadradoCambiar2 {
+    position: absolute;
+    width: 187px;
+    height: 87px;
   }
 
   #atencion {
     position: absolute;
-    left: 22px;
-    top: 35px;
-    font-size: 32px;
+    left: 42px;
+    top: 8px;
+    font-size: 26px;
     text-align: center;
     font-family: "Raleway", sans-serif;
     color: #000000;
   }
   #formacion {
     position: absolute;
-    left: 22px;
-    top: 35px;
-    font-size: 32px;
+    left: 42px;
+    top: 8px;
+    font-size: 26px;
     text-align: center;
     font-family: "Raleway", sans-serif;
     color: #000000;
@@ -204,7 +225,7 @@ text-decoration: none;
   .inicioServicio {
     position: absolute;
     width: 150px;
-    height: 60px;
+    height: 50px;
     left: 10px;
     top: 5px;
     padding-left: 7px;
@@ -212,26 +233,35 @@ text-decoration: none;
     border-radius: 25px;
   }
   .iconocasa {
-    float: left;
+    width: 32px;
+    height: 25px;
+    top: 1px;
+    left: 8px;
+    position: relative;
   }
   .iniciosesionServicio {
     position: absolute;
-    width: 230px;
-    height: 60px;
-    left: 1110px;
+    width: 200px;
+    height: 50px;
+    left: 216px;
     top: 5px;
     padding-left: 5px;
     background: #266439;
     border-radius: 25px;
   }
   .iconopersona {
-    float: left;
+    width: 30px;
+    height: 25px;
+    top: 3px;
+    left: 8px;
+    position: relative;
   }
   .letrasesionServicio {
     color: white;
-    padding-right: 7px;
+    padding-right: 12px;
     font-family: "Fredoka One", cursive;
     letter-spacing: 2px;
+    font-size: 18px;
   }
 }
 </style>
