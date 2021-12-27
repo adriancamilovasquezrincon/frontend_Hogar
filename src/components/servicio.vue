@@ -148,14 +148,14 @@ export default {
   .servicios {
     text-align: center;
     margin-top: 86px;
-    font-size: 50px;
+    font-size: 46px;
     color: rgba(0, 0, 0, 0.61);
     font-family: "Fredoka One", cursive;
   }
   .fondo {
     position: absolute;
     width: 425px;
-    height: 1000px;
+    height: 1200px;
     background-image: url("../assets/Celular/servicios/Fondo.png");
   }
   /**Marcos arreglados */
@@ -243,7 +243,7 @@ export default {
     position: absolute;
     width: 200px;
     height: 50px;
-    left: 212px;
+    left: 190px;
     top: 5px;
     background: #266439;
     border-radius: 25px;
