@@ -149,14 +149,14 @@ export default {
     text-align: center;
     margin-top: 86px;
     font-size: 46px;
-  color: rgba(0, 0, 0, 0.61);
+    color: rgba(0, 0, 0, 0.61);
     font-family: "Fredoka One", cursive;
   }
   .fondo {
     position: fixed;
     width: 425px;
-    height: 1480px;
-    background-image: url("../assets/imagenesHogar/Fondo_solo_ 3.png");
+    height: 890px;
+    background-image: url("../assets/Celular/servicios/fondito.png");
   }
   /**Marcos arreglados */
   .marco1 {
@@ -243,7 +243,7 @@ export default {
     position: absolute;
     width: 180px;
     height: 50px;
-    left: 170px;
+    left: 220px;
     top: 5px;
     background: #266439;
     border-radius: 25px;
