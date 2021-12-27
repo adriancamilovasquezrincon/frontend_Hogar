@@ -144,19 +144,19 @@ export default {
   font-family: "Fredoka One", cursive;
   letter-spacing: 2px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .servicios {
     text-align: center;
     margin-top: 86px;
     font-size: 46px;
-    color: rgba(0, 0, 0, 0.61);
+  color: rgba(0, 0, 0, 0.61);
     font-family: "Fredoka One", cursive;
   }
   .fondo {
-    position: absolute;
-    width: 375px;
+    position: fixed;
+    width: 425px;
     height: 1480px;
-    background-image: url("../assets/Celular/servicios/Fondo.png");
+    background-image: url("../assets/imagenesHogar/Fondo_solo_ 3.png");
   }
   /**Marcos arreglados */
   .marco1 {
