@@ -1,5 +1,5 @@
 <template>
-  <v-sheet height="657" class="overflow-hidden" style="position: relative">
+  <v-sheet class="overflow-hidden">
     <v-btn
       color="#266439"
       fab
@@ -264,7 +264,8 @@ export default {
 .overflow-hidden {
   position: fixed;
   width: 1366px;
-  background-image: url("../assets/fondos/Fondo_solo_ 1.png");
+  height: 800px;
+  background-image: url("../assets/imagenesHogar/contactarnos/fondito.png");
 }
 .fondocuadrodesplegable {
   position: fixed;
@@ -373,7 +374,7 @@ export default {
   width: 600px;
   height: 665px;
   left: 900px;
-  top: 145px;
+  top: 140px;
 }
 
 /**Circulos*/
