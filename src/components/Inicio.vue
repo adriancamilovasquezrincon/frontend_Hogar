@@ -1,138 +1,6 @@
 <template>
   <div>
-    <div class="fondo1">
-      <div>
-        <div class="nubepequeña"></div>
-
-        <div class="nube1-1"></div>
-
-        <div class="nube2"></div>
-
-        <div class="nube3"></div>
-
-        <div class="nube4"></div>
-
-        <div class="nube5"></div>
-      </div>
-
-      <div class="menu">
-        <a href="https://instagram.com/hogarsanjoseg?utm_medium=copy_link">
-          <button class="instagram">
-            <img src="../assets/fondos/instagram.png" alt="" /></button
-        ></a>
-
-        <a href="https://www.facebook.com/profile.php?id=100004830978218">
-          <button class="facebook">
-            <img src="../assets/fondos/facebook.png" alt="" /></button
-        ></a>
-
-        <a href="https://wa.link/sjdzzx">
-          <button class="whatsApp">
-            <img src="../assets/fondos/whatsApp.png" alt="" /></button
-        ></a>
-
-        <a href="https://hogarsanjosegalan.blogspot.com/">
-          <button class="blog">
-            <h2 class="letrasesion">Blog</h2>
-          </button></a
-        >
-
-        <router-link to="/login"
-          ><button class="iniciosesion">
-            <img
-              class="iconopersona"
-              src="../assets/fondos/iconopersona.png"
-              alt=""
-            />
-            <h2 class="letrasesion">inicio sesión</h2>
-          </button></router-link
-        >
-      </div>
-
-      <h1 class="titulo1">Hogar</h1>
-      <h2 class="titulo2">San José</h2>
-      <h3 class="titulo3">GALÁN</h3>
-
-      <div class="abuelo">
-        <img src="../assets/fondos/abuelosbaile.png" alt="" />
-      </div>
-
-      <div>
-        <router-link to="/servicio">
-          <button class="boton1">
-            <img src="../assets/fondos/icono1.png" alt="" /></button
-        ></router-link>
-      </div>
-      <div>
-        <h3 class="servicio">Servicios</h3>
-      </div>
-
-      <div>
-        <router-link class="Ircontacto" to="/quienSomos">
-          <button class="boton2">
-            <img src="../assets/fondos/icono2.png" alt="" /></button
-        ></router-link>
-      </div>
-      <div>
-        <h3 class="quienes">¿Quiénes somos?</h3>
-      </div>
-
-      <div>
-        <router-link to="/contactanos">
-          <button class="boton3">
-            <img src="../assets/fondos/icono3.png" alt="" /></button
-        ></router-link>
-      </div>
-      <div>
-        <h3 class="informacion">Información</h3>
-      </div>
-
-      <div>
-        <h1 class="proceso">Proceso de Ingreso</h1>
-      </div>
-    </div>
-
-    <div class="fondo2">
-      <div class="imagenproceso1">
-        <img src="../assets/fondos/proceso1.png" alt="" />
-      </div>
-
-      <div class="imagenproceso2">
-        <img src="../assets/fondos/proceso2.png" alt="" />
-      </div>
-
-      <div class="imagenproceso3">
-        <img src="../assets/fondos/proceso3.png" alt="" />
-      </div>
-
-      <div class="num1">
-        <h1 class="uno">1</h1>
-      </div>
-
-      <div class="num2">
-        <h1 class="dos">2</h1>
-      </div>
-
-      <div class="num3">
-        <h1 class="tres">3</h1>
-      </div>
-
-      <div class="textoSolicitud">
-        <h4>Nos contactas y pasas una solicitud.</h4>
-      </div>
-
-      <div class="texto2">
-        <h4>Esperas la respuesta de admisión por parte de la junta.</h4>
-      </div>
-
-      <div class="texto3">
-        <h4>Te damos el cupo para disfrutar de nuestros servicios.</h4>
-      </div>
-
-      <h1 class="titulofotos">fotografías</h1>
-    </div>
-
-    <div class="fondo3">
+    <!-- <div class="fondo3">
       <div class="cajafoto1">
         <img class="foto1" src="../assets/fondos/foto1.jpeg" alt="" />
       </div>
@@ -180,22 +48,10 @@
       <div class="cajafoto12">
         <img class="foto12" src="../assets/fondos/foto12.jpeg" alt="" />
       </div>
-    </div>
+    </div> -->
 
-    <div class="fondo4">
-      <div>
-        <div class="nubepequeña"></div>
-
-        <div class="nube1"></div>
-
-        <div class="nube2"></div>
-
-        <div class="nube3"></div>
-
-        <div class="nube4grande"></div>
-
-        <div class="nube5"></div>
-      </div>
+    <!-- <div class="fondo4">
+      
 
       <h1 class="titulofelices">FELICES SIEMPRE FELICES</h1>
 
@@ -233,7 +89,7 @@
       <div class="cajagalan">
         <h4 class="textogalan">Galán- Santander-Colombia</h4>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -244,18 +100,6 @@ export default {
 };
 </script>
 <style>
-/*tipografía*/
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-
-/* body {
-  flex-wrap: wrap;
-} */
-body {
-  flex-wrap: wrap;
-  display: flex;
-}
 .fondo1 {
   position: absolute;
   width: 1366px;
@@ -1002,12 +846,6 @@ body {
   background: #266439;
   border-radius: 25px;
   padding-left: 7px;
-}
-.menu {
-  position: relative;
-  width: 1367px;
-  height: 72px;
-  background-color: rgba(0, 0, 0, 0.445);
 }
 .foto1 {
   width: 257px;
