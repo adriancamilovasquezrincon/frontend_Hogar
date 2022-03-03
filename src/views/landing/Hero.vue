@@ -48,6 +48,7 @@ export default {};
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: 638px 1fr;
   grid-template-rows: 1fr;
@@ -156,7 +157,8 @@ export default {};
     }
     &-right {
       position: absolute;
-      bottom: 120px;
+      top: 15rem;
+      // bottom: 120px;
       left: 7rem;
     }
     &-item {

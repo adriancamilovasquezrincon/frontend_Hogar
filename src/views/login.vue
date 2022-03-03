@@ -103,7 +103,7 @@ export default {
   background-image: url("../assets/fondos/Fondo_solo_ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 600px;
+  min-height: 630px;
   .is-grid {
     position: relative;
     z-index: 2;
@@ -224,7 +224,6 @@ a {
     left: 105px;
   }
   .piso {
-    bottom: -187px;
     height: 151px;
   }
 }

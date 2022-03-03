@@ -1,6 +1,6 @@
 <template>
   <div class="admission">
-    <h2 class="title">Proceso de ingreso</h2>
+    <h2 class="title-custom">Proceso de ingreso</h2>
     <div class="admission__cards">
       <div class="admission__card">
         <div class="number">1</div>

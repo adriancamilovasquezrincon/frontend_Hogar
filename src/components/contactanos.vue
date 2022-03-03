@@ -13,7 +13,7 @@
     </header>
 
 
-    <h1 class="title">¡Puedes Contactarnos!</h1>
+    <h1 class="title-custom">¡Puedes Contactarnos!</h1>
 
     <div class="service__content">
       <div class="service__people">
@@ -120,7 +120,7 @@ export default {
       color: #ffffff;
     }
   }
-  .title {
+  .title-custom {
     font-family: Fredoka One;
     font-style: normal;
     font-weight: normal;
@@ -188,11 +188,11 @@ export default {
         width: 33px;
       }
       p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
-    .title {
+    .title-custom {
       margin-top: 20px;
       font-size: 45px;
       line-height: 54px;

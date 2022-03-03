@@ -13,7 +13,7 @@
         </router-link>
       </header>
 
-      <h1 class="title">¿Quiénes somos?</h1>
+      <h1 class="title-custom">¿Quiénes somos?</h1>
 
       <div class="about__hero">
         <div class="about__abount">
@@ -34,7 +34,7 @@
             width="460"
             height="240"
             src="https://www.youtube.com/embed/TNxXcezaYjA"
-            title="YouTube video player"
+            title-custom="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -141,7 +141,7 @@
 
 <style lang="scss" scoped>
 .about {
-  .title {
+  .title-custom {
     font-family: Fredoka One;
     font-style: normal;
     font-weight: normal;
@@ -207,7 +207,7 @@
       font-family: Raleway;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
+      font-size: 21px;
       line-height: 28px;
       text-align: center;
 
@@ -218,6 +218,7 @@
     display: flex;
     align-items: center;
     background-image: url("../assets/fondos/tabla.png");
+    background-size: cover;
     .content {
       padding: 23px 24px;
       h3 {
@@ -252,12 +253,12 @@
         width: 33px;
       }
       p {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 24px;
       }
     }
-    .title {
-      font-size: 45px;
+    .title-custom {
+      font-size: 35px;
       line-height: 54px;
     }
     &__frame {
@@ -276,6 +277,12 @@
       &.right {
         justify-content: end;
       }
+      .content {
+        p {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
     }
     &__abount {
       img {
@@ -284,8 +291,8 @@
       p {
         top: 56px;
         left: 2.5rem;
-        font-size: 12px;
-        line-height: 19px;
+        font-size: 13px;
+        line-height: 15px;
         max-width: 240px;
       }
     }
@@ -293,6 +300,17 @@
       img {
         width: 300px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about {
+    &__wrapper-hero {
+      width: 341px;
+    }
+    &__section {
+      width: 341px;
     }
   }
 }

@@ -13,7 +13,7 @@
     </header>
 
     <div class="service__content">
-      <h1 class="title">Servicio Atención</h1>
+      <h1 class="title-custom">Servicio Atención</h1>
       <div class="service__frames">
         <div class="frame">
           <img src="@/assets/imagenesHogar/salud.svg" alt="cuadroCircular" />
@@ -78,7 +78,7 @@ export default {
     }
   }
   &__content {
-    .title {
+    .title-custom {
       font-family: Fredoka One;
       font-style: normal;
       font-weight: normal;

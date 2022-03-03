@@ -13,7 +13,7 @@
     </header>
 
     <div class="service__content">
-      <h1 class="title">Servicios</h1>
+      <h1 class="title-custom">Servicios</h1>
       <div class="service__frames">
         <router-link to="/servicioAtencion" class="service__frame">
           <img src="@/assets/imagenesHogar/marco.png" alt="marco" />
@@ -69,7 +69,7 @@ export default {
     }
   }
   &__content {
-    .title {
+    .title-custom {
       font-family: Fredoka One;
       font-style: normal;
       font-weight: normal;
@@ -127,7 +127,7 @@ export default {
     }
     &__content {
       padding: 40px 0;
-      .title {
+      .title-custom {
         font-size: 45px;
         line-height: 54px;
       }

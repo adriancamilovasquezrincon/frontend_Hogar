@@ -39,7 +39,7 @@ ul{
   list-style: none;
 }
 
-.title {
+.title-custom {
   font-weight: normal;
   font-size: 96px;
   line-height: 116px;
@@ -48,7 +48,7 @@ ul{
   margin-bottom: 46px;
 }
 @media screen and (max-width:768px) {
-  .title {
+  .title-custom {
     font-size: 36px;
     line-height: 44px;
   }

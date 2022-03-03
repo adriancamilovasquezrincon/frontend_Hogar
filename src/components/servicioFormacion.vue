@@ -13,7 +13,7 @@
     </header>
 
     <div class="service__content">
-      <h1 class="title">Servicio formación</h1>
+      <h1 class="title-custom">Servicio formación</h1>
       <div class="service__frames">
         <div class="frame">
           <img src="@/assets/imagenesHogar/psicologia.svg" alt="psicologia" />
@@ -78,7 +78,7 @@ export default {
     }
   }
   &__content {
-    .title {
+    .title-custom {
       font-family: Fredoka One;
       font-style: normal;
       font-weight: normal;
@@ -90,7 +90,6 @@ export default {
   &__frames {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     min-height: 500px;
     .frame {
       padding: 1rem;
@@ -144,13 +143,14 @@ export default {
       }
     }
     &__content {
-      .title {
+      .title-custom {
         font-size: 38px;
         line-height: 51px;
         margin-top: 30px;
       }
     }
     &__frames {
+      flex-wrap: wrap;
       .frame {
         flex-direction: row-reverse;
         &:nth-child(odd) {
