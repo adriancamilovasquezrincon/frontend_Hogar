@@ -1,51 +1,33 @@
 <template>
-  <div class="fondo">
-    <h1 class="servicios">Servicios</h1>
+  <div class="service">
+    <header class="service__header">
+      <router-link class="service__link" to="/">
+        <img src="@/assets/fondos/casa.png" alt="iconocasa" />
+        <p>inicio</p>
+      </router-link>
 
-    <div>
-      <router-link to="/">
-        <button class="inicioServicio">
-          <img class="iconocasa" src="../assets/fondos/casa.png" alt="" />
-          <h2 class="letrasesionServicio">inicio</h2>
-        </button></router-link
-      >
+      <router-link class="service__link" to="/login">
+        <img src="@/assets/fondos/iconopersona.png" alt="iconopersona" />
+        <p>inicio sesión</p>
+      </router-link>
+    </header>
 
-      <router-link to="/login">
-        <button class="iniciosesionServicio">
-          <img
-            class="iconopersona"
-            src="../assets/fondos/iconopersona.png"
-            alt=""
-          />
-          <h2 class="letrasesionServicio">inicio sesión</h2>
-        </button></router-link
-      >
-    </div>
+    <div class="service__content">
+      <h1 class="title">Servicios</h1>
+      <div class="service__frames">
+        <router-link to="/servicioAtencion" class="service__frame">
+          <img src="@/assets/imagenesHogar/marco.png" alt="marco" />
+          <div class="frame">
+            <p>Servicio Atención</p>
+          </div>
+        </router-link>
 
-    <div class="marco1">
-      <img class="marco1a" src="../assets/imagenesHogar/marco.png" alt="" />
-      <div class="cuadroSer">
-        <img
-          class="cuadradoCambiar"
-          src="../assets/imagenesHogar/cuadrado.png"
-          alt=""
-        />
-        <router-link to="/servicioAtencion">
-          <h3 id="atencion">Servicio Atención</h3></router-link
-        >
-      </div>
-    </div>
-    <div class="marco2">
-      <img class="marco2a" src="../assets/imagenesHogar/marcos.png" alt="" />
-      <div class="cuadroSer2">
-        <img
-          class="cuadradoCambiar2"
-          src="../assets/imagenesHogar/cuadrado.png"
-          alt=""
-        />
-        <router-link to="/servicioFormacion">
-          <h3 id="formacion">Servicio formación</h3></router-link
-        >
+        <router-link to="/servicioFormacion" class="service__frame">
+          <img src="@/assets/imagenesHogar/marcos.png" alt="marcos" />
+          <div class="frame">
+            <p>Servicio formación</p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -53,214 +35,112 @@
 <script>
 export default {
   name: "servicio",
-  data() {
-    return {};
-  },
 };
 </script>
-<style>
-.servicios {
-  text-align: center;
-  margin-top: 80px;
-  font-size: 60px;
-  color: rgba(0, 0, 0, 0.61);
-  font-family: "Fredoka One", cursive;
-}
-.fondo {
-  position: fixed;
-  width: 1366px;
-  height: 800px;
+<style lang="scss" scoped>
+.service {
   background-image: url("../assets/imagenesHogar/Fondo_solo_ 3.png");
-}
-.marco1 {
-  position: absolute;
-  left: 250px;
-  top: 175px;
-}
-.marco2 {
-  position: absolute;
-  left: 800px;
-  top: 175px;
-}
-.cuadroSer {
-  position: absolute;
-  left: 36px;
-  top: 242px;
-}
-.cuadroSer2 {
-  position: absolute;
-  left: 35px;
-  top: 242px;
-  margin-left: 1px;
-}
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 768px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 27px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #007947;
+    border-radius: 30px;
+    padding: 15px 30px;
+    gap: 16px;
+    p {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 44px;
+      margin: 0;
 
-#atencion {
-  position: absolute;
-  left: 22px;
-  top: 35px;
-  font-size: 32px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-}
-#formacion {
-  position: absolute;
-  left: 22px;
-  top: 35px;
-  font-size: 32px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-}
-.inicioServicio {
-  position: absolute;
-  width: 150px;
-  height: 60px;
-  left: 10px;
-  top: 5px;
-  padding-left: 7px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconocasa {
-  float: left;
-}
-.iniciosesionServicio {
-  position: absolute;
-  width: 230px;
-  height: 60px;
-  left: 1110px;
-  top: 5px;
-  padding-left: 5px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconopersona {
-  float: left;
-}
-.letrasesionServicio {
-  color: white;
-  padding-right: 7px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-}
-@media screen and (max-width: 425px) {
-  .servicios {
-    margin-right: 35px;
-    margin-top: 86px;
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.61);
-    font-family: "Fredoka One", cursive;
+      color: #ffffff;
+    }
   }
-  .fondo {
-    position: fixed;
-    width: 425px;
-    height: 2000px;
-    background-image: url("../assets/Celular/servicios/fondito.png");
-  }
-  /**Marcos arreglados */
-  .marco1 {
-    position: absolute;
-    left: 100px;
-    top: 175px;
-  }
-  .marco2 {
-    position: absolute;
-    left: 100px;
-    top: 175px;
-  }
-  .marco1a {
-    position: absolute;
-    width: 240px;
-    height: 265.06px;
-    top: 5px;
-  }
-  .marco2a {
-    position: absolute;
-    width: 240px;
-    height: 265.06px;
-    top: 278px;
-  }
-  /**Cuadros */
-  .cuadroSer {
-    position: absolute;
-    top: 164px;
-    left: 26.3px;
-  }
-  .cuadradoCambiar {
-    position: absolute;
-    width: 187px;
-    height: 87px;
-  }
+  &__content {
+    .title {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 77px;
 
-  .cuadroSer2 {
-    position: absolute;
-    left: 25.4px;
-    top: 435px;
+      color: rgba(0, 0, 0, 0.6);
+    }
   }
-  .cuadradoCambiar2 {
-    position: absolute;
-    width: 187px;
-    height: 87px;
+  &__frames {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 288px;
+    .frame {
+      position: absolute;
+      bottom: 29px;
+      left: 35px;
+      background: #D3F7FF;
+      max-width: 250px;
+      width: 100%;
+      height: 139px;
+      p {
+        font-family: Kaushan Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 70px;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+      }
+    }
   }
-
-  #atencion {
-    position: absolute;
-    left: 42px;
-    top: 8px;
-    font-size: 26px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-  }
-  #formacion {
-    position: absolute;
-    left: 42px;
-    top: 8px;
-    font-size: 26px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-  }
-  .inicioServicio {
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 10px;
-    top: 5px;
-    padding-left: 7px;
-    background: #266439;
-    border-radius: 25px;
-  }
-  .iconocasa {
-    width: 32px;
-    height: 25px;
-    top: 1px;
-    left: 8px;
+  &__frame {
     position: relative;
   }
-  .iniciosesionServicio {
-    position: absolute;
-    width: 190px;
-    height: 50px;
-    left: 210px;
-    top: 5px;
-    background: #266439;
-    border-radius: 25px;
-  }
-  .iconopersona {
-    width: 30px;
-    height: 25px;
-    top: 3px;
-    left: 8px;
-    position: relative;
-  }
-  .letrasesionServicio {
-    color: white;
-    padding-right: 12px;
-    font-family: "Fredoka One", cursive;
-    letter-spacing: 2px;
-    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    min-height: 840px;
+    &__header {
+      padding: 5px 11px;
+    }
+    &__link {
+      padding: 10px 1rem;
+      img {
+        width: 33px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    &__content {
+      padding: 40px 0;
+      .title {
+        font-size: 45px;
+        line-height: 54px;
+      }
+    }
+    &__frames {
+      gap: 37px;
+      .frame {
+        p {
+          font-size: 35px;
+          line-height: 51px;
+        }
+      }
+    }
   }
 }
 </style>

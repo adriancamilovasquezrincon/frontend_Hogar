@@ -1,56 +1,49 @@
 <template>
-  <div class="fondito">
-    <div>
-      <router-link to="/">
-        <button class="inicioContacto">
-          <img class="iconocasaContacto" src="../assets/fondos/casa.png" alt="" />
-          <h2 class="letrasesionContacto">inicio</h2>
-        </button></router-link
-      >
+  <div class="service">
+    <header class="service__header">
+      <router-link class="service__link" to="/">
+        <img src="@/assets/fondos/casa.png" alt="iconocasa" />
+        <p>inicio</p>
+      </router-link>
 
-      <router-link to="/login">
-        <button class="iniciosesionContacto">
-          <img
-            class="iconopersonaContacto"
-            src="../assets/fondos/iconopersona.png"
-            alt=""
-          />
-          <h2 class="letrasesionContacto">inicio sesión</h2>
-        </button></router-link
-      >
+      <router-link class="service__link" to="/login">
+        <img src="@/assets/fondos/iconopersona.png" alt="iconopersona" />
+        <p>inicio sesión</p>
+      </router-link>
+    </header>
+
+
+    <h1 class="title">¡Puedes Contactarnos!</h1>
+
+    <div class="service__content">
+      <div class="service__people">
+        <img src="@/assets/fondos/people-contact.svg" alt="people-contact" />
+      </div>
+
+      <form class="form">
+        <div class="field">
+          <label class="label">Teléfono</label>
+          <input class="input" type="text" v-model="contactanos.telefono" />
+        </div>
+        <div class="field">
+          <label class="label">Correo electrónico</label>
+          <input class="input" type="text" v-model="contactanos.correo" />
+        </div>
+        <div class="field">
+          <label class="label">Nombres</label>
+          <input class="input" type="text" v-model="contactanos.nombres" />
+        </div>
+        <button @click.passive="enviarInfo" type="button" class="btn">Enviar</button>
+      </form>
     </div>
 
-    <h1 class="contacto">¡Puedes Contactarnos!</h1>
-
-    <div class="mesita">
-      <img src="../assets/imagenesHogar/contactarnos/mesita.png" alt="" />
-    </div>
-    <div class="computadorContacto">
-      <img src="../assets/imagenesHogar/contactarnos/computador1.png" alt="" />
-    </div>
-
-    <div>
-      <h4 id="telefonoContacto">Teléfono</h4>
-
-      <input class="llamarContacto" type="text" v-model="contactanos.telefono" />
-
-      <h4 id="emailContacto">Correo electrónico</h4>
-
-      <input class="correoContacto" type="text" v-model="contactanos.correo" />
-
-      <h4 id="nombresContacto">Nombres</h4>
-
-      <input class="nombreContacto" type="text" v-model="contactanos.nombres" />
-
-      <button @click="enviarInfo" type="button" class="entrarContacto">Enviar</button>
-    </div>
   </div>
 </template>
 <script>
 import axios from "axios";
 import Swal from "sweetalert2";
 export default {
-  name: "",
+  name: "Contactanos",
   data() {
     return {
       contactanos: {
@@ -97,151 +90,133 @@ export default {
   },
 };
 </script>
-<style>
-.llamarContacto {
-  position: absolute;
+<style lang="scss" scoped>
+.service {
+  background-image: url("../assets/imagenesHogar/Fondo_solo_ 3.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 27px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #007947;
+    border-radius: 30px;
+    padding: 15px 30px;
+    gap: 16px;
+    p {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 44px;
+      margin: 0;
+
+      color: #ffffff;
+    }
+  }
+  .title {
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    .form {
+      width: 100%;
+      .field {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.label {
+  font-family: Kaushan Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+
+  color: #000000;
+}
+.input {
   padding-left: 5px;
   padding-right: 5px;
-  width: 290px;
-  height: 56px;
-  left: 960px;
-  top: 240px;
+  max-width: 368px;
+  width: 100%;
+  height: 77px;
 
   background: rgba(0, 121, 71, 0.5);
-  border-radius: 30px;
+  border-radius: 50px;
 }
-.correoContacto {
-  position: absolute;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 290px;
-  height: 56px;
-  left: 960px;
-  top: 360px;
-
-  background: rgba(0, 121, 71, 0.5);
-  border-radius: 30px;
+.btn {
+  display: block;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background: #007947;
+  border-radius: 120px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px 20px;
 }
-.nombreContacto {
-  position: absolute;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 290px;
-  height: 56px;
-  left: 960px;
-  top: 470px;
-
-  background: rgba(0, 121, 71, 0.5);
-  border-radius: 30px;
-}
-.fondito {
-  position: fixed;
-  width: 1366px;
-  height: 800px;
-  background-image: url("../assets/imagenesHogar/contactarnos/fondito.png");
-}
-.computadorContacto {
-  position: absolute;
-  left: 30px;
-  top: 120px;
-}
-.mesita {
-  position: absolute;
-  top: 532px;
-}
-.contacto {
-  color: rgba(0, 0, 0, 0.61);
-  text-align: center;
-  margin-top: 60px;
-  font-family: "Fredoka One", cursive;
-  font-size: 60px;
-}
-.rectangulo {
-  position: absolute;
-  left: 920px;
-  top: 220px;
-}
-.rectangulo2 {
-  position: absolute;
-  left: 920px;
-  top: 340px;
-}
-.rectangulo3 {
-  position: absolute;
-  left: 920px;
-  top: 460px;
-}
-.entrarContacto {
-  position: absolute;
-  width: 150px;
-  height: 50px;
-  left: 1030px;
-  top: 550px;
-  background: #266439;
-  border-radius: 25px;
-  color: white;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-#telefonoContacto {
-  position: absolute;
-  left: 960px;
-  top: 190px;
-  font-size: 22px;
-  font-family: "Kaushan Script", cursive;
-}
-#emailContacto {
-  position: absolute;
-  left: 960px;
-  top: 310px;
-  font-size: 22px;
-  font-family: "Kaushan Script", cursive;
-}
-#nombresContacto {
-  position: absolute;
-  left: 960px;
-  top: 430px;
-  font-size: 22px;
-  font-family: "Kaushan Script", cursive;
-}
-#llamarContacto {
-  position: absolute;
-  left: 960px;
-  top: 250px;
-  color: black;
-  font-family: "Kaushan Script", cursive;
-}
-.inicioContacto {
-  position: absolute;
-  width: 150px;
-  height: 60px;
-  left: 10px;
-  top: 5px;
-  padding-left: 7px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconocasaContacto {
-  float: left;
-}
-.iniciosesionContacto {
-  position: absolute;
-  width: 230px;
-  height: 60px;
-  left: 1110px;
-  top: 5px;
-  padding-left: 5px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconopersonaContacto {
-  float: left;
-}
-.letrasesionContacto {
-  color: white;
-  padding-right: 7px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
+@media screen and (max-width: 768px) {
+  .service {
+    min-height: 840px;
+    &__header {
+      padding: 5px 11px;
+    }
+    &__link {
+      padding: 10px 1rem;
+      img {
+        width: 33px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .title {
+      margin-top: 20px;
+      font-size: 45px;
+      line-height: 54px;
+    }
+    &__content {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+    &__people {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .label {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .input {
+    height: 50px;
+  }
+  .field {
+    margin-bottom: 2rem;
+  }
 }
 </style>

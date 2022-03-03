@@ -79,6 +79,7 @@ export default {
     }
   }
   &__contact {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;

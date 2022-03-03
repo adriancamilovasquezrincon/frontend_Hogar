@@ -160,6 +160,7 @@ export default {};
       left: 7rem;
     }
     &-item {
+      position: relative;
       a {
         width: 80px;
         height: 80px;

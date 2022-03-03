@@ -1,467 +1,299 @@
 <template>
-  <div>
-    <div class="fondosoloQuien">
-      <div>
-        <router-link to="/">
-          <button class="inicioQuien">
-            <img
-              class="iconocasaQuien"
-              src="../assets/fondos/casa.png"
-              alt=""
-            />
-            <h2 class="letrasesionQuien">inicio</h2>
-          </button></router-link
-        >
+  <div class="about">
+    <div class="about__wrapper-hero">
+      <header class="about__header">
+        <router-link class="about__link" to="/">
+          <img src="@/assets/fondos/casa.png" alt="iconocasa" />
+          <p>inicio</p>
+        </router-link>
 
-        <router-link to="/login">
-          <button class="inicioSesionQuien">
-            <img
-              class="iconopersona12"
-              src="../assets/fondos/iconopersona.png"
-              alt=""
-            />
-            <h2 class="letrasesionQuien">inicio sesión</h2>
-          </button></router-link
-        >
+        <router-link class="about__link" to="/login">
+          <img src="@/assets/fondos/iconopersona.png" alt="iconopersona" />
+          <p>inicio sesión</p>
+        </router-link>
+      </header>
+
+      <h1 class="title">¿Quiénes somos?</h1>
+
+      <div class="about__hero">
+        <div class="about__abount">
+          <img src="@/assets/fondos/cuadrolargo.png" alt="frame" />
+          <p>
+            Somos una institución sin ánimo de lucro, que con sentido cristiano
+            y de Iglesia, busca brindar y promover la mejor calidad de vida
+            posible para el adulto mayor de todos los estratos sociales mediante
+            nuestro servicio de atención interno o externo, nuestra asesoría
+            legal y nuestra labor educativa que contempla al adulto en
+            particular y a la comunidad en general.
+          </p>
+        </div>
+
+        <div class="about__frame">
+          <img src="@/assets/fondos/computador.png" alt="computador" />
+          <iframe
+            width="460"
+            height="240"
+            src="https://www.youtube.com/embed/TNxXcezaYjA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
-      <h1 class="tituloQuienes">¿Quiénes somos?</h1>
-
-      <div class="pisoQuien"></div>
-
-      <div class="cuadroQuien">
-        <p class="cuadrotexto1">
-          Somos una institución sin ánimo de lucro, que con sentido cristiano y
-          de Iglesia, busca brindar y promover la mejor calidad de vida posible
-          para el adulto mayor de todos los estratos sociales mediante nuestro
-          servicio de atención interno o externo, nuestra asesoría legal y
-          nuestra labor educativa que contempla al adulto en particular y a la
-          comunidad en general.
-        </p>
-
-        <p></p>
-      </div>
-
-      <div class="computadorQuien">
-        <iframe
-          width="460"
-          height="215"
-          src="https://www.youtube.com/embed/TNxXcezaYjA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <div class="plantaQuien"></div>
-
-      <div class="tachesQuien"></div>
     </div>
 
-    <div class="fondotabla1">
-      <div class="mancha1"></div>
-
-      <div class="lapicero"></div>
-
-      <h1 class="titulomision">Misión</h1>
-      <p class="textomision">
-        Brindar y promover una vejez digna y feliz, para los Galaneros en
-        especial y para todos en general. Digna: con la mejor calidad de vida,
-        de acuerdo a como lo merece un ser humano y un cristiano. Feliz:
-        asumiendo con gozo y con todo el sentido positivo de esta etapa de la
-        vida, disfrutando de sus realizaciones y aportando a la comunidad sus
-        talentos y sabiduría aprendida en la escuela de la vida con lo cual se
-        es aún más útil que en las anteriores etapas de la existencia. Para los
-        Galaneros… son nuestros primeros y directos destinatarios Por lo tanto
-        nos apersonamos, nos hacemos responsables de: A. La realidad del adulto
-        mayor de nuestra comunidad Constituimos un observatorio del adulto mayor
-        para tener información acerca de: Cuántos son, quiénes son, dónde y cómo
-        viven. B. Su atención Para los de dentro y fuera de nuestras
-        instalaciones. C. Formación Para los adultos internos y externos, y para
-        toda la comunidad en general. (Toma de conciencia de esta etapa de la
-        vida y formación para ella).
-      </p>
-    </div>
-
-    <div class="fondotabla2">
-      <div class="mancha2"></div>
-      <div class="celularQuien"></div>
-
-      <h1 class="titulovision">Visión</h1>
-      <p class="textovision">
-        Al llegar el año 2020 El Hogar San José es una institución que se
-        posiciona como todo un suceso positivo y atractivo, único en su género,
-        así es reconocido y apreciado en el ámbito local y regional al
-        constituirse en una entidad que integra a su eficiente servicio de
-        atención al adulto mayor todo un proceso educativo con proyección a toda
-        la comunidad y contar con unas instalaciones hermosas, modernas y
-        acogedoras en armonía con el medio ambiente y tener todo un calificado
-        equipo de trabajo que labora con sentido humano y cristiano.
-      </p>
-
-      <div class="float lef"></div>
-    </div>
-
-    <div class="fondotabla3">
-      <div class="mancha3"></div>
-      <div class="papel"></div>
-
-      <h1 class="tituloobjetivos">Objetivos</h1>
-      <p class="textoobjetivos">OBJETIVO GENERAL</p>
-      <p class="textoobjetivos1">
-        • La mejor calidad de vida para los Galaneros, especialmente para los
-        adultos mayores con gozo y dignidad como lo merece todo ser humano y
-        cristiano.
-      </p>
-      <p class="textoobjetivos2">OBJETIVOS ESPECÍFICOS</p>
-      <p class="textoobjetivos3">
-        1. Que el adulto mayor goce de la mejor atención y bienestar integral,
-        bajo un claro principio de corresponsabilidad, y desde este servicio
-        brindarle formación tanto a él como a su familia y a toda la comunidad
-        sobre el asumir la vida con responsabilidad.
-      </p>
-      <p class="textoobjetivos4">
-        2. Ofrecer una novedosa, moderna,positiva y atractiva alternativa de
-        atención y bienestar para el adulto mayor que rompa con la idea terrible
-        de lo que es un “ancianato”, en el que no se desea llegar a estar, y por
-        el contrario se constituya en el anhelo a donde se quiere llegar a
-        vivir.
-      </p>
-    </div>
-
-    <div class="fondotabla4">
-      <div class="mancha4"></div>
-    </div>
+    <main class="about__content">
+      <section class="about__section left">
+        <img src="@/assets/fondos/mision.svg" alt="frame" />
+        <div class="content">
+          <h3>Misión</h3>
+          <p>
+            Brindar y promover una vejez digna y feliz, para los Galaneros en
+            especial y para todos en general. Digna: con la mejor calidad de
+            vida, de acuerdo a como lo merece un ser humano y un cristiano.
+            Feliz: asumiendo con gozo y con todo el sentido positivo de esta
+            etapa de la vida, disfrutando de sus realizaciones y aportando a la
+            comunidad sus talentos y sabiduría aprendida en la escuela de la
+            vida con lo cual se es aún más útil que en las anteriores etapas de
+            la existencia. Para los Galaneros… son nuestros primeros y directos
+            destinatarios Por lo tanto nos apersonamos, nos hacemos responsables
+            de: A. La realidad del adulto mayor de nuestra comunidad
+            Constituimos un observatorio del adulto mayor para tener información
+            acerca de: Cuántos son, quiénes son, dónde y cómo viven. B. Su
+            atención Para los de dentro y fuera de nuestras instalaciones. C.
+            Formación Para los adultos internos y externos, y para toda la
+            comunidad en general. (Toma de conciencia de esta etapa de la vida y
+            formación para ella).
+          </p>
+        </div>
+      </section>
+      <section class="about__section right">
+        <div class="content">
+          <h3>Visión</h3>
+          <p>
+            Al llegar el año 2020 El Hogar San José es una institución que se
+            posiciona como todo un suceso positivo y atractivo, único en su
+            género, así es reconocido y apreciado en el ámbito local y regional
+            al constituirse en una entidad que integra a su eficiente servicio
+            de atención al adulto mayor todo un proceso educativo con proyección
+            a toda la comunidad y contar con unas instalaciones hermosas,
+            modernas y acogedoras en armonía con el medio ambiente y tener todo
+            un calificado equipo de trabajo que labora con sentido humano y
+            cristiano.
+          </p>
+        </div>
+        <img src="@/assets/fondos/vision.png" alt="frame" />
+      </section>
+      <section class="about__section left">
+        <img src="@/assets/fondos/objetivos.svg" alt="frame" />
+        <div class="content">
+          <h3>Objetivos</h3>
+          <div class="parrafo">
+            <p>OBJETIVO GENERAL • La mejor calidad de vida para los Galaneros,
+            especialmente para los adultos mayores con gozo y dignidad como lo
+            merece todo ser humano y cristiano.</p>
+            <p>
+            OBJETIVOS ESPECÍFICOS <br>
+            1. Que el adulto mayor goce de la mejor atención y bienestar integral, bajo un
+            claro principio de corresponsabilidad, y desde este servicio
+            brindarle formación tanto a él como a su familia y a toda la
+            comunidad sobre el asumir la vida con responsabilidad.
+            <br>
+            2. Ofrecer
+            una novedosa, moderna, positiva y atractiva alternativa de atención
+            y bienestar para el adulto mayor que rompa con la idea terrible de
+            lo que es un “ancianato”, en el que no se desea llegar a estar, y
+            por el contrario se constituya en el anhelo a donde se quiere llegar
+            a vivir.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about__section right">
+        <div class="content">
+          <p>
+            3. Que ningún adulto mayor termine su vida en la soledad y el
+            abandono, que pueda tener la alternativa de elegir un estilo de vida
+            en comunión donde se respeta su individualidad y en donde a un costo
+            accesible pueda disfrutar la mejor calidad de vida con amor, fe, paz
+            y alegría. <br>
+            4. Ser un centro de motivación, sensibilización y
+            formación sobre la importancia de dar sentido a la vida y el aspirar
+            y trabajar por vivir siempre en las mejores condiciones,
+            especialmente en la vejez. <br>
+            5. Que el adulto mayor se valore y sea
+            valorado como persona, se reconozca su talento y protagonismo en la
+            sociedad le sea respetada su dignidad y derechos, forme así parte
+            activa de la sociedad y nunca sea marginado. <br>
+            6. Contar con un
+            importante respaldo financiero tanto por parte de quienes usan el
+            servicio, como de la comunidad y de los entes oficiales y no
+            oficiales, nacionales e internacionales que permita una normal
+            sostenibilidad y avance de nuestro proyecto institucional.
+          </p>
+        </div>
+        <img src="@/assets/fondos/objetivos2.png" alt="frame" />
+      </section>
+    </main>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
-.fondosoloQuien {
-  position: absolute;
-  width: 1366px;
-  height: 625px;
-  background-image: url("../assets/fondos/Fondo_solo_ 1.png");
-}
-.pisoQuien {
-  position: absolute;
-  width: 1366px;
-  height: 124px;
-  top: 525px;
-  background-image: url("../assets/fondos/tabla piso2.png");
-}
-.fondotabla1 {
-  position: absolute;
-  width: 1366px;
-  height: 825px;
-  top: 649px;
-  background-image: url("../assets/fondos/tabla.png");
-}
-.fondotabla2 {
-  position: absolute;
-  width: 1366px;
-  height: 825px;
-  top: 1358px;
-  background-image: url("../assets/fondos/tabla.png");
-}
-.fondotabla3 {
-  position: absolute;
-  width: 1366px;
-  height: 768px;
-  top: 2125px;
-  background-image: url("../assets/fondos/tabla.png");
-}
-.cuadroQuien {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  left: 166px;
-  top: 80px;
-  background-image: url("../assets/fondos/cuadrolargo.png");
-}
-.computadorQuien {
-  padding-left: 40px;
-  padding-top: 65px;
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  left: 766px;
-  top: 150px;
-  background-image: url("../assets/fondos/computador.png");
-}
-.tachesQuien {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  left: 400px;
-  top: 490px;
-  background-image: url("../assets/fondos/taches.png");
-}
-.plantaQuien {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  left: 5px;
-  top: 307px;
-  background-image: url("../assets/fondos/planta.png");
-}
-.mancha1 {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  background-image: url("../assets/fondos/mancha1.png");
-}
-.lapicero {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  top: 150px;
-  left: 130px;
-  background-image: url("../assets/fondos/lapicero.png");
-}
-.mancha1 {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  background-image: url("../assets/fondos/mancha1.png");
-}
-.mancha2 {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  left: 566px;
-  background-image: url("../assets/fondos/mancha2.png");
-}
-.celularQuien {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  top: 150px;
-  left: 830px;
-  background-image: url("../assets/fondos/celular.png");
-}
-.mancha3 {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  background-image: url("../assets/fondos/mancha1.png");
-}
-.papel {
-  position: absolute;
-  width: 783px;
-  height: 745px;
-  top: 23px;
-  left: 40px;
-  background-image: url("../assets/fondos/papel 1.png");
-}
-.texto1 {
-  position: absolute;
-  width: 674px;
-  height: 647px;
-  left: 785px;
-  top: 30px;
+<style lang="scss" scoped>
+.about {
+  .title {
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
 
-  font-size: 24px;
-  line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 27px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #007947;
+    border-radius: 30px;
+    padding: 15px 30px;
+    gap: 16px;
+    p {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 44px;
+      margin: 0;
 
-  color: #ffffff;
+      color: #ffffff;
+    }
+  }
+  &__wrapper-hero {
+    background-image: url("../assets/fondos/piso_hero.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 730px;
+  }
+  &__hero {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__frame {
+    position: relative;
+    iframe {
+      position: absolute;
+      left: 38px;
+      top: 66px;
+    }
+  }
+  &__abount {
+    position: relative;
+    p {
+      position: absolute;
+      top: 97px;
+      left: 4rem;
+      max-width: 420px;
+
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+
+      color: #000000;
+    }
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/fondos/tabla.png");
+    .content {
+      padding: 23px 24px;
+      h3 {
+        font-family: Fredoka One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 77px;
+        color: #ffffff;
+      }
+      p {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #ffffff;
+      }
+    }
+  }
 }
-.tituloQuienes {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 50px;
-  color: rgba(0, 0, 0, 0.6);
-  font-family: "Fredoka One", cursive;
-}
-p {
-  position: absolute;
-  width: 429px;
-  height: 281px;
-  left: 66px;
-  top: 92px;
-  font-family: "Raleway", sans-serif;
-  text-align: left;
 
-  font-size: 23px;
-  line-height: 28px;
-  text-align: left;
-
-  color: #000000;
-}
-.titulomision {
-  position: absolute;
-  width: 207px;
-  height: 66px;
-  left: 900px;
-  top: 5px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-
-  font-size: 56px;
-  line-height: 77px;
-
-  color: #ffffff;
-}
-.textomision {
-  position: absolute;
-  width: 674px;
-  height: 647px;
-  left: 650px;
-  top: 90px;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.titulovision {
-  position: absolute;
-  width: 207px;
-  height: 66px;
-  left: 360px;
-  top: 150px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-
-  font-size: 56px;
-  line-height: 77px;
-
-  color: #ffffff;
-}
-.textovision {
-  position: absolute;
-  width: 674px;
-  height: 647px;
-  left: 100px;
-  top: 250px;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.tituloobjetivos {
-  position: absolute;
-  width: 207px;
-  left: 900px;
-  top: 10px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-
-  font-size: 56px;
-  line-height: 77px;
-
-  color: #ffffff;
-}
-.textoobjetivos {
-  position: absolute;
-  width: 674px;
-  left: 650px;
-  top: 100px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.textoobjetivos1 {
-  position: absolute;
-  width: 674px;
-  left: 650px;
-  top: 130px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.textoobjetivos2 {
-  position: absolute;
-  width: 674px;
-  left: 650px;
-  top: 250px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.textoobjetivos3 {
-  position: absolute;
-  width: 674px;
-  left: 650px;
-  top: 280px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.textoobjetivos4 {
-  position: absolute;
-  width: 674px;
-  left: 650px;
-  top: 450px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.textoobjetivos {
-  position: absolute;
-  width: 674px;
-  height: 647px;
-  left: 650px;
-  top: 100px;
-  font-family: "Raleway", sans-serif;
-
-  font-size: 24px;
-
-  color: #ffffff;
-}
-.inicioQuien {
-  position: absolute;
-  width: 150px;
-  height: 60px;
-  left: 10px;
-  top: 5px;
-  padding-left: 7px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconocasaQuien {
-  float: left;
-}
-.inicioSesionQuien {
-  position: absolute;
-  width: 230px;
-  height: 60px;
-  left: 1110px;
-  top: 5px;
-  padding-left: 5px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconopersona12 {
-  float: left;
-}
-.letrasesionQuien {
-  color: white;
-  padding-right: 7px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
-}
-.cuadrotexto1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  text-align: center;
+@media screen and (max-width: 768px)  {
+  .about {
+    &__header {
+      padding: 5px 11px;
+    }
+    &__link {
+      padding: 10px 1rem;
+      img {
+        width: 33px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .title {
+      font-size: 45px;
+      line-height: 54px;
+    }
+    &__frame {
+      img {
+        max-width: 320px;
+      }
+      iframe {
+        left: 18px;
+        top: 31px;
+        max-width: 271px;
+        height: 141px;
+      }
+    }
+    &__section {
+      flex-wrap: wrap;
+      &.right {
+        justify-content: end;
+      }
+    }
+    &__abount {
+      img {
+        width: 320px;
+      }
+      p {
+        top: 56px;
+        left: 2.5rem;
+        font-size: 12px;
+        line-height: 19px;
+        max-width: 240px;
+      }
+    }
+    &__section {
+      img {
+        width: 300px;
+      }
+    }
+  }
 }
 </style>

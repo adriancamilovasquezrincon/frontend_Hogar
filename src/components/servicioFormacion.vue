@@ -1,188 +1,176 @@
 <template>
-  <div class="mesa">
-    <div>
-      <router-link to="/">
-        <button class="inicioFormacion">
-          <img class="iconocasa" src="../assets/fondos/casa.png" alt="" />
-          <h2 class="letrasesionFormacion">inicio</h2>
-        </button></router-link
-      >
+  <div class="service">
+    <header class="service__header">
+      <router-link class="service__link" to="/">
+        <img src="@/assets/fondos/casa.png" alt="iconocasa" />
+        <p>inicio</p>
+      </router-link>
 
-      <router-link to="/login">
-        <button class="iniciosesionFormacion">
-          <img
-            class="iconopersona"
-            src="../assets/fondos/iconopersona.png"
-            alt=""
-          />
-          <h2 class="letrasesionFormacion">inicio sesión</h2>
-        </button></router-link
-      >
-    </div>
+      <router-link class="service__link" to="/login">
+        <img src="@/assets/fondos/iconopersona.png" alt="iconopersona" />
+        <p>inicio sesión</p>
+      </router-link>
+    </header>
 
-    <h2 class="formacion">Servicio Formación</h2>
+    <div class="service__content">
+      <h1 class="title">Servicio formación</h1>
+      <div class="service__frames">
+        <div class="frame">
+          <img src="@/assets/imagenesHogar/psicologia.svg" alt="psicologia" />
+          <p>Asistencia en Psicología</p>
+        </div>
 
-    <div class="psicologia">
-      <img src="../assets/imagenesHogar/cuadroCircular.png" alt="" />
+        <div class="frame">
+          <img src="@/assets/imagenesHogar/deporte.svg" alt="deporte" />
+          <p>Asistencia en deportes</p>
+        </div>
 
-      <div id="sicologa">
-        <img src="../assets/imagenesHogar/psicologia.png" alt="" />
-        <h4 id="textoSicologia">Asistencia en psicología</h4>
-      </div>
-    </div>
+        <div class="frame">
+          <img src="@/assets/imagenesHogar/espiritual.svg" alt="espiritual" />
+          <p>Asesoría espiritual</p>
+        </div>
 
-    <div class="deportes">
-      <img src="../assets/imagenesHogar/cuadroSombra2.png" alt="" />
-      <div id="deporte">
-        <img src="../assets/imagenesHogar/ejercicio.png" alt="" />
-        <h4 id="textoDeporte">Asistencia en Deportes</h4>
-      </div>
-    </div>
-    <div class="espiritual">
-      <img src="../assets/imagenesHogar/cuadroCircular.png" alt="" />
-      <div id="iglesia">
-        <img src="../assets/imagenesHogar/iglesia2.png" alt="" />
-        <h4 id="textoEspiritual">Asesoría Espiritual</h4>
-      </div>
-    </div>
-    <div class="manualidades">
-      <img src="../assets/imagenesHogar/cuadroSombra2.png" alt="" />
-      <div id="pintura">
-        <img src="../assets/imagenesHogar/pintura.png" alt="" />
-        <h4 id="textoManualidad">Manualidades</h4>
+        <div class="frame">
+          <img src="@/assets/imagenesHogar/manualidades.svg" alt="manualidades" />
+          <p>Manualidades</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
+  name: "Servicio Atencion",
   data() {
     return {};
   },
 };
 </script>
-<style>
-.mesa {
-  position: fixed;
-  width: 1366px;
-  height: 800px;
+<style lang="scss" scoped>
+.service {
   background-image: url("../assets/imagenesHogar/mesa.png");
-}
-.formacion {
-  text-align: center;
-  margin-top: 70px;
-  font-size: 50px;
-  color: rgba(255, 255, 255, 0.829);
-  font-family: "Fredoka One", cursive;
-}
-.psicologia {
-  position: absolute;
-  left: 80px;
-  top: 122px;
-}
-.deportes {
-  position: absolute;
-  left: 400px;
-  top: 255px;
-}
-.espiritual {
-  position: absolute;
-  left: 720px;
-  top: 122px;
-}
-.manualidades {
-  position: absolute;
-  left: 1040px;
-  top: 255px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 768px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 27px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #007947;
+    border-radius: 30px;
+    padding: 15px 30px;
+    gap: 16px;
+    p {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 44px;
+      margin: 0;
+
+      color: #ffffff;
+    }
+  }
+  &__content {
+    .title {
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 64px;
+      line-height: 77px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  &__frames {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 500px;
+    .frame {
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      &:nth-child(odd) {
+        justify-content: start;
+        p { max-width: 252px; }
+      }
+      &:nth-child(1) {
+        p { max-width: 312px; }
+      }
+      &:nth-child(2) {
+        p { max-width: 329px; }
+      }
+      img {
+        max-width: 251px;
+      }
+      p {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+        
+      }
+    }
+  }
 }
 
-/**Iconos de servicio Formación */
-#sicologa {
-  position: absolute;
-  left: 50px;
-  top: 140px;
+@media screen and (max-width: 768px) {
+  .service {
+    min-height: 840px;
+    &__header {
+      padding: 5px 11px;
+    }
+    &__link {
+      padding: 10px 1rem;
+      img {
+        width: 33px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    &__content {
+      .title {
+        font-size: 38px;
+        line-height: 51px;
+        margin-top: 30px;
+      }
+    }
+    &__frames {
+      .frame {
+        flex-direction: row-reverse;
+        &:nth-child(odd) {
+          flex-direction: row;
+        }
+        img {
+          max-width: 170px;
+        }
+        p {
+          font-size: 22px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
 }
-#deporte {
-  position: absolute;
-  left: 55px;
-  top: 80px;
-}
-#iglesia {
-  position: absolute;
-  left: 60px;
-  top: 108px;
-}
-#pintura {
-  position: absolute;
-  left: 60px;
-  top: 100px;
-}
-/**Textos de formación*/
-#textoSicologia {
-  position: absolute;
-  left: 14px;
-  top: 180px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-}
-#textoEspiritual {
-  position: absolute;
-  left: 40px;
-  top: 210px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-}
-#textoDeporte {
-  position: absolute;
-  width: auto;
-  top: 210px;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-}
-#textoManualidad {
-  position: absolute;
-  left: 40px;
-  top: 198px;
-  color: white;
-  font-size: 20px;
-  font-family: "Raleway", sans-serif;
-}
-.inicioFormacion {
-  position: absolute;
-  width: 150px;
-  height: 60px;
-  left: 10px;
-  top: 5px;
-  padding-left: 7px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconocasa {
-  float: left;
-}
-.iniciosesionFormacion {
-  position: absolute;
-  width: 230px;
-  height: 60px;
-  left: 1110px;
-  top: 5px;
-  padding-left: 5px;
-  background: #266439;
-  border-radius: 25px;
-}
-.iconopersona {
-  float: left;
-}
-.letrasesionFormacion {
-  color: white;
-  padding-right: 7px;
-  font-family: "Fredoka One", cursive;
-  letter-spacing: 2px;
+
+@media screen and (max-width: 320px) {
+  .service{
+    width: 325px;
+  }
 }
 </style>
