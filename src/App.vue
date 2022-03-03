@@ -1,17 +1,24 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app>
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  data: () => ({
+    //
+  }),
 };
 </script>
-
 <style>
-/*tipografía*/
+
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");

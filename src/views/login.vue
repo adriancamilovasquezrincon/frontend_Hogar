@@ -56,6 +56,7 @@ export default {
   },
   methods: {
     ingresar() {
+      const self=this
       axios
         .post(`usuario/login`, {
           email: this.usuario.user,
@@ -64,10 +65,10 @@ export default {
         .then(function (response) {
           console.log("Entrando");
           console.log(response);
-          this.$store.dispatch("setToken", response.data.token);
+          self.$store.dispatch("setToken", response.data.token);
           console.log(response.data.token);
           // console.log("Token 1"+ this.$store.state.token)
-          this.$router.push("/menu");
+          self.$router.push("/menu");
         })
         .catch(function ({ error }) {
           Swal.fire({

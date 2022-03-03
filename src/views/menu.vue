@@ -250,7 +250,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 /*tipografía*/
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
