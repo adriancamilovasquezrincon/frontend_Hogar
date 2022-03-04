@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <h2 class="title-custom">fotografías</h2>
+    <h2 class="title-custom">Fotografías</h2>
     <div class="gallery__cards">
       <div class="gallery__card">
         <img loading="lazy" src="@/assets/fondos/foto1.jpeg" alt="gallery" />

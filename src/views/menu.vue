@@ -297,6 +297,7 @@ export default {
   padding-right: 7px;
   font-family: "Fredoka One", cursive;
   letter-spacing: 2px;
+  font-size: 24px;
 }
 .titulomuenu1 {
   color: white;

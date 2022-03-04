@@ -16,7 +16,7 @@
     </div>
 
     <div class="user">
-      <v-toolbar-title class="usuario">Contactos</v-toolbar-title>
+      <v-toolbar-title class="contactossss">Contactos</v-toolbar-title>
     </div>
 
     <div class="cuadro">
@@ -309,8 +309,9 @@ export default {
   padding-right: 7px;
   font-family: "Fredoka One", cursive;
   letter-spacing: 2px;
+    font-size: 24px;
 }
-.usuario {
+.contactossss {
   color: white;
   font-family: "Fredoka One", cursive;
   font-size: 50px;
