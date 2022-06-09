@@ -18,7 +18,7 @@
       <div class="footer__contact">
         <div class="footer__item">
           <img src="@/assets/fondos/telefono.png" alt="phone" />
-          <p>Teléfono: 3227373441</p>
+          <p>Teléfono: 3227377441</p>
         </div>
 
         <div class="footer__item">
